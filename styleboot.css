@@ -1,0 +1,388 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color:black;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.side-bar{
+    background-color:black;
+    width:340px ;
+    border-radius: 1rem; /*16px px*/
+   margin-right: 0.5rem;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+   background-color: #121212;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.nav-option{
+    line-height:2.5rem;
+    opacity: 0.8;
+    padding: 8px 0.75rem;
+    background-color: #121212;
+    
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+    background-color: #121212;
+}
+
+.nav-option a{
+    font-size:1rem ;
+    margin-left: 1rem;
+    text-decoration: none;
+    background-color: #121212;
+    color: white;
+  
+}
+
+.library {
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem; 
+
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.lib-option img {
+    height: 1.25rem;
+    width: 1.25rem;
+}
+.lib-option a{
+    color: white;
+}
+
+.icons {
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem;
+
+}
+
+.icons i:hover {
+    opacity: 1;
+
+}
+.card{
+    background-color: violet;
+}
+
+
+
+.box{
+    height: 8rem;
+    background-color: #232323;
+    padding:1rem ;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0 ;
+    padding: 0.55rem 1rem;
+    font-family: serif;
+}
+.box-p1{
+    font-size: 1rem;
+    background-color: #232323;
+    font-weight: 700;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.8;
+    background-color: #232323;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius:100px ;
+    padding: 0.25rem 1rem;
+    color: black;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width:fit-content ;
+}
+.badge-1{
+    border: none;
+    border-radius:100px ;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width:fit-content ;
+    background-color: #232323;
+    color: white;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.nav-icons{
+    margin-left:0.75rem ;
+}
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.sticky-nav button{
+ margin-right: 1rem;   
+}
+
+
+/* media quoie for main content nav bar */
+
+@media( max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+
+
+/* card making */
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left:1.5rem ;
+    margin-top:1rem ;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width:100% ;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+
+}
+/* music player  */
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.album{
+    height: 50px;
+    width: 25%;
+    display: flex;
+    margin-left: 0.5rem;
+    justify-content: baseline;
+    align-items: flex-start;
+}
+.hii{
+display: flex;
+flex-direction: column;
+line-height: 0;
+margin-top: 0.25rem;
+/* margin-left: 1.5rem; */
+justify-content: flex-start;
+align-items: flex-start;
+}
+
+.album img{
+    height: 80%;
+    padding-top: 0.5rem;
+}
+.album p{
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+}
+.hii-i{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+padding-left: 0.5rem;
+    
+}
+
+.hii-2{
+    height: 2rem;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 0.5rem;
+}
+
+.player{
+    width: 50%;
+    /* background-color: orange; */
+}
+
+
+
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+}
+
+.player-control-icon:hover{
+opacity: 1;
+}
+
+.progess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+    
+}
+
+.progess-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+.progess-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 0.25rem;
+}
+.progess-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color:#1bd760 ;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.control{
+    width: 25%;
+    /* background-color: yellowgreen; */
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    margin-left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.played{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+   
+}
+.control-icons{
+    height: 2rem;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+.played-3{
+    width: 80%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.played-3::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 10px;
+    height: 0.25rem;
+}
+
+.played-3::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color:#1bd760 ;
+    border-radius: 50%;
+    margin-top: -8px;
+}
